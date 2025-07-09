@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Saya</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="Assets/FavIcon-removebg.png">
 </head>
 <div id="particles-js"></div>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
@@ -25,67 +26,72 @@
 </script>
 <body>
   <header>
-    <nav>
-      <h1>Marioe Tri Wardhana</h1>
-      <ul>
-        <li><a href="#tentang">About Me</a></li>
-         <li><a href="#pendidikan">Education</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#keahlian">Skills</a></li>
-        <li><a href="#kontak">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <h1>Marioe Tri Wardhana</h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="#tentang">About Me</a></li>
+      <li><a href="#pendidikan">Education</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#keahlian">Skills</a></li>
+      <li><a href="#cv">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#kontak">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <section class="hero" data-aos="fade-up">
     <div class="hero-wrapper">
       <div class="hero-content">
         <h2><span id="typed-text"></span></h2>
         <p>IT and AI Enthusiast passionate about building smart and innovative solutions</p>
-        <a href="#project" class="btn">Lihat Proyek</a>
+        <a href="#tentang" class="btn">About Me</a>
       </div>  
-  
-    <div class="wave">
-      <svg viewBox="0 0 1440 320"><path fill="#2c5364" fill-opacity="1" d="M0,256L60,261.3C120,267,240,277,360,282.7C480,288,600,288,720,277.3C840,267,960,245,1080,234.7C1200,224,1320,224,1380,224L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </div>
-    <div class="wave-separator">
+      <div class="wave">
+        <svg viewBox="0 0 1440 320"><path fill="#2c5364" fill-opacity="1" d="M0,256L60,261.3C120,267,240,277,360,282.7C480,288,600,288,720,277.3C840,267,960,245,1080,234.7C1200,224,1320,224,1380,224L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      </div>
+      <div class="wave-separator">
         <svg viewBox="0 0 1440 320"><path fill="#2c5364" fill-opacity="1" d="M0,192L1440,64L1440,320L0,320Z"></path></svg>
       </div>
+    </div>
   </section>
 
   <section id="tentang" class="section" data-aos="fade-up">
-  <div class="tentang-wrapper">
-    <div class="tentang-content">
-      <h2>About Me</h2>
-      <p>Hello! I'm Marioe Tri Wardhana, a 5th-semester student majoring in Information Technology at President University, specializing in Artificial Intelligence. I am passionate about software development, system analysis, and AI-based technologies. Through my academic and extracurricular activities, I've developed my technical, leadership, and collaboration skills.</p>
-      <p>I have been involved in projects related to web and mobile development, and artificial intelligence. Some of my work includes building dynamic e-commerce systems, a chatbot API integration, and a Flutter-based attendance app. Currently, I am working on NLP projects such as voice-to-text summarization using modern AI techniques.</p>
-      <div class="social-icons">
-        
+    <div class="tentang-wrapper">
+      <div class="tentang-content">
+        <h2>About Me</h2>
+        <p>Hello! I'm Marioe Tri Wardhana, a 6th-semester student majoring in Information Technology at President University, specializing in Artificial Intelligence. I am passionate about software development, system analysis, and AI-based technologies. Through my academic and extracurricular activities, I've developed my technical, leadership, and collaboration skills.</p>
+        <p>I have been involved in projects related to web and mobile development, and artificial intelligence. Some of my work includes building dynamic e-commerce systems, a chatbot API integration, and a Flutter-based attendance app.</p>
+        <div class="social-icons">
+        </div>
+      </div>
+      <div class="tentang-image">
+        <img src="assets/profile.jpg" alt="Marioe Tri Wardhana" />
       </div>
     </div>
-    <div class="tentang-image">
-      <img src="assets/profile.jpg" alt="Marioe Tri Wardhana" />
-    </div>
-  </div>
-</section>
+  </section>
+
   <section id="pendidikan" class="section" data-aos="fade-up">
-  <h2>Education</h2>
-  <div class="education-container">
-    <div class="education-card" data-aos="fade-right">
-      <img src="assets/smanga.png" alt="Logo SMA" class="edu-logo"/>
-      <h3>SMA Negeri 3 Wonogiri</h3>
-      <span class="edu-year">Jul 2020 - May 2023</span>
-      <p>Graduated from MIPA, where I began to be interested in the world of science and technology and was active in various academic activities.</p>
+    <h2>Education</h2>
+    <div class="education-container">
+       <div class="education-card" data-aos="fade-right">
+        <img src="assets/president.png" alt="Logo Universitas" class="edu-logo"/>
+        <h3>President University</h3>
+        <span class="edu-year">Sep 2023 - Present</span>
+        <p>Currently studying Informatics with a concentration in Artificial Intelligence. Active in project development </p>
+      </div>
+      <div class="education-card" data-aos="fade-left">
+        <img src="assets/smanga.png" alt="Logo SMA" class="edu-logo"/>
+        <h3>SMA Negeri 3 Wonogiri</h3>
+        <span class="edu-year">Jul 2020 - May 2023</span>
+        <p>Graduated from MIPA, where I began to be interested in the world of science and technology and was active in various academic activities.</p>
+      </div>
     </div>
-    <div class="education-card" data-aos="fade-left">
-      <img src="assets/president.png" alt="Logo Universitas" class="edu-logo"/>
-      <h3>President University</h3>
-      <span class="edu-year">Sep 2023 - Present</span>
-      <p>Currently studying Informatics with a concentration in Artificial Intelligence. Active in project development </p>
-    </div>
-  </div>
-</section>
+  </section>
+
   <section id="project" class="section" data-aos="fade-left">
     <h2>Project</h2>
     <div class="project-container">
@@ -95,7 +101,7 @@
         <div class="project-image">
           <img src="Project/SSIP/SSIP.png" alt="Gambar Proyek 1" />
         </div>
-        <a href="https://github.com/MarioeTri/CRUD" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>
+        <a href="https://github.com/MarioeTri/CRUD" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>
       </div>
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
@@ -104,7 +110,7 @@
         <div class="project-image">
           <img src="Project/ProjectTrash/ProjectTrash.png" alt="Gambar Proyek 1" />
         </div>
-        <a href="https://github.com/MarioeTri/Trash-Object-Detection.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>       
+        <a href="https://github.com/MarioeTri/Trash-Object-Detection.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>       
       </div>
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
@@ -113,7 +119,7 @@
         <div class="project-image">
           <img src="Project/Group Attendance Management/Attendance.png" alt="Gambar Proyek 1" />
         </div>
-        <a href="https://github.com/MarioeTri/Attendance-Management-.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>       
+        <a href="https://github.com/MarioeTri/Attendance-Management-.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>       
       </div>
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
@@ -122,7 +128,7 @@
         <div class="project-image">
           <img src="Project/Speech To Text Summarization/Screenshot 2025-05-13 235245.png" alt="Gambar Proyek 1" />
         </div>
-        <a href="https://github.com/MarioeTri/Speech-to-Text-Summarization.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>       
+        <a href="https://github.com/MarioeTri/Speech-to-Text-Summarization.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>       
       </div>
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
@@ -131,7 +137,7 @@
         <div class="project-image">
           <img src="Project/Spatial Filtering and Edge Detection in Medical Imaging/spatial_filters.png" alt="Gambar Proyek 1" />
         </div>
-        <a href="https://github.com/MarioeTri/Spatial-Filtering-and-Edge-Detection-in-Medical-Imaging.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>       
+        <a href="https://github.com/MarioeTri/Spatial-Filtering-and-Edge-Detection-in-Medical-Imaging.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>       
       </div>
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
@@ -140,20 +146,20 @@
         <div class="project-image">
           <img src="Project/Image Matching & Alignment with ORB/Image Matching & Alignment.png" alt="Gambar Proyek 1" />
         </div>
-        <a href="https://github.com/MarioeTri/Image-Matching-Alignment-with-ORB.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>       
+        <a href="https://github.com/MarioeTri/Image-Matching-Alignment-with-ORB.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>       
       </div>
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
         <h3>Doctor AI Mobile</h3>
-        <p>developed DoctorAI, a mobile application that contains an AI-based chatbot to answer medical questions from users. The chatbot was initially developed using Python and then deployed to a Dart (Flutter) based mobile application. In addition to the chatbot, the app also provides a search feature for pharmacy and hospital addresses in various regions, as well as a drug recommendation feature for minor ailments. This project integrates artificial intelligence with digital health services to provide solutions that are informative, practical, and easily accessible to users.</p>
+        <p>Developed DoctorAI, a mobile application that contains an AI-based chatbot to answer medical questions from users. The chatbot was initially developed using Python and then deployed to a Dart (Flutter) based mobile application. In addition to the chatbot, the app also provides a search feature for pharmacy and hospital addresses in various regions, as well as a drug recommendation feature for minor ailments. This project integrates artificial intelligence with digital health services to provide solutions that are informative, practical, and easily accessible to users.</p>
         <div class="project-image2">
           <img src="Project/DoctorAIMobile/AIMobile .jpg" alt="Gambar Proyek 1" />
-          <img src="Project/DoctorAIMobile/AIMobile2.jpg" alt="Gambar Proyek 1" />
-          <img src="Project/DoctorAIMobile/AIMobile3.jpg" alt="Gambar Proyek 1" />
-          <img src="Project/DoctorAIMobile/AIMobile 4.jpg" alt="Gambar Proyek 1" />
-          <img src="Project/DoctorAIMobile/AIMobile 5.jpg" alt="Gambar Proyek 1" />
+          <img src="Project/DoctorAIMobile/AIMobile2.jpg" alt="Gambar Proyek 2" />
+          <img src="Project/DoctorAIMobile/AIMobile3.jpg" alt="Gambar Proyek 3" />
+          <img src="Project/DoctorAIMobile/AIMobile 4.jpg" alt="Gambar Proyek 4" />
+          <img src="Project/DoctorAIMobile/AIMobile 5.jpg" alt="Gambar Proyek 5" />
         </div>
-        <a href="https://github.com/AbhiprayaCode/wmp-project.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>
+        <a href="https://github.com/AbhiprayaCode/wmp-project.git" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>
       </div> 
 
       <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
@@ -161,75 +167,15 @@
         <p>The application was developed using Android Studio to facilitate the digital student enrollment process. The features in this application include Register Student for new account creation, Login for user authentication, Enrollment Menu as a navigation center, Select Subject to select courses, Enrollment Summary to display a summary of selected courses. This application is designed to improve efficiency and accuracy in managing student academic data. The development of this application strengthened my understanding in activity management, Android UI, and data integration between pages.</p>
         <div class="project-image2">
           <img src="Project/Enrollment Application/Register Page.png" alt="Gambar Proyek 1" />
-          <img src="Project/Enrollment Application/Login Page.png" alt="Gambar Proyek 1" />
-          <img src="Project/Enrollment Application/Home Page.png" alt="Gambar Proyek 1" />
-          <img src="Project/Enrollment Application/EnrollNow Page.png" alt="Gambar Proyek 1" />
-          <img src="Project/Enrollment Application/After Choose Enroll.png" alt="Gambar Proyek 1" />
+          <img src="Project/Enrollment Application/Login Page.png" alt="Gambar Proyek 2" />
+          <img src="Project/Enrollment Application/Home Page.png" alt="Gambar Proyek 3" />
+          <img src="Project/Enrollment Application/EnrollNow Page.png" alt="Gambar Proyek 4" />
+          <img src="Project/Enrollment Application/After Choose Enroll.png" alt="Gambar Proyek 5" />
         </div>
-        <a href="https://github.com/MarioeTri/WMPFinalExam" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Lihat Proyek</a>
+        <a href="https://github.com/MarioeTri/WMPFinalExam" class="btn-project" data-project="1" target="_blank" rel="noopener noreferrer">Project</a>
       </div>  
-
     </div>
   </section>
-  <section id="certificates" style="padding: 50px 20px; background-color: transparant;">
-  <h2 style="text-align: center; margin-bottom: 40px;">Sertificate</h2>
-
-  <div class="certificate-container">
-    <div class="certificate-card">
-      <img src="Certificate/Procean.png" alt="Certificate 1">
-      <div class="certificate-info">
-        <h3>Volunteering in PROCEAN (Project Ocean)</h3>
-        <p>As a volunteer in the PROCEAN project, I contribute to efforts to reduce waste in the coastal environment. My main activities include beach cleaning and educating the community on the importance of keeping the coastal environment clean for a better ecosystem. I also work closely with the team in waste management and support environmental awareness campaigns to the community.</p>
-      </div>
-    </div>
-
-    <div class="certificate-card">
-      <img src="Certificate/Kids & Care.jpg" alt="Certificate 2">
-      <div class="certificate-info">
-        <h3>Kids and Care Volunteer</h3>
-        <p>In Kids and Care, I play an active role in supporting children from various backgrounds to get better education and care. As a volunteer, I assist in teaching and learning activities, as well as providing mentoring to children in need, with a focus on their educational and social development. This activity aims to improve children's quality of life through better care and education.</p>
-      </div>
-    </div>
-
-    <div class="certificate-card">
-      <img src="Certificate/Participant Seminar.jpg" alt="Certificate 3">
-      <div class="certificate-info">
-        <h3>Seminar: The Art and Algorithms of Design</h3>
-        <p>As a participant in The Art and Algorithms of Design seminar, I joined the event to explore the relationship between the artistic aspects of design and the underlying algorithms. This seminar provided new insights into the application of technology in design and how algorithms can be used to create aesthetic works. Through this seminar, I was able to expand my knowledge about design and techniques that combine art with computer science.</p>
-      </div>
-    </div>
-    <div class="certificate-card">
-      <img src="Certificate/Young On Top Leadership Program.jpg" alt="Certificate 3">
-      <div class="certificate-info">
-        <h3>Young On Top Leadership Program</h3>
-        <p>Participated in the Young On Top Leadership Program online via video, which provides deep insights into leadership and personal development. In this program, I learned important concepts related to leadership skills, team management, and soft skills development needed to succeed in the professional world. The program also gave me a new perspective on how to be an effective leader, build a positive mentality, and take advantage of opportunities to grow and develop in my career.</p>
-      </div>
-    </div>
-    <div class="certificate-card">
-      <img src="Certificate/COOMPSPHERE.jpg" alt="Certificate 3">
-      <div class="certificate-info">
-        <h3>Seminar: Coompsphere</h3>
-        <p>An event organized by PUMA Informatics that featured speakers from the technology industry and academia. This seminar discussed the latest topics in the field of information technology, such as software development, UI/UX design, artificial intelligence, and digital innovation. Through this seminar, I gained new insights, inspiration, and a deeper understanding of trends and opportunities in the IT world.</p>
-      </div>
-    </div>
-    <div class="certificate-card">
-      <img src="Certificate/Commite.jpg" alt="Certificate 4">
-      <div class="certificate-info">
-        <h3>Student Awarding Night Logistic Committee</h3>
-        <p>As a member of the logistics committee for the Student Awarding Night event, I was responsible for the preparation and management of the event logistics, including venue arrangements, equipment, as well as ensuring the efficient running of the event. I worked closely with the team to prepare all the necessities, including decorations, documentation, and coordination with various parties to ensure the awarding event runs smoothly and successfully.</p>
-      </div>
-    </div>
-  </div>
-</section>
-  <div id="project-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h3 id="modal-title"></h3>
-      <div id="modal-gallery" class="gallery">
-      </div>
-      <p id="modal-description"></p>
-    </div>
-  </div>
 
   <section id="keahlian" class="section" data-aos="flip-up">
     <h2>Skills</h2>
@@ -240,17 +186,210 @@
       <li><i class="fab fa-react"></i> React</li>
       <li><i class="fas fa-code"></i> C++</li>
       <li><i class="fas fa-database"></i> MySQL</li>
-      <li><i class="fab fa-python"></i> Python</li> 
-      <li><i class="fab fa-java"></i> Java</li> 
+      <li><i class="fab fa-python"></i> Python</li>
+      <li><i class="fab fa-java"></i> Java</li>
       <li><i class="fas fa-file-excel"></i> Excel</li>
+      <li><i class="fas fa-cogs"></i> Laravel</li>
+      <li><i class="fas fa-mobile-alt"></i> Flutter</li>
+      <li><i class="fas fa-laptop-code"></i> Android Studio</li>
+      <li><i class="fab fa-php"></i> PHP</li>
+      <li><i class="fas fa-code"></i> Dart</li>
+      <li><i class="fas fa-database"></i> SQLite</li>
+      <li><i class="fas fa-rocket"></i> Netlify</li>
     </ul>
   </section>
 
+  <section id="cv" class="section" data-aos="fade-up">
+  <h2>My Experience</h2>
+  <div class="cv-toggle-buttons">
+    <button class="toggle-btn active" onclick="showSection('cv-content')">CV Overview</button>
+    <button class="toggle-btn" onclick="showSection('experience-content')">Experience</button>
+  </div>
+  <div id="cv-content" class="cv-section-content active">
+    <div class="cv-wrapper">
+      <div class="cv-content">
+        <p>Explore my professional journey, skills, and achievements in detail through my Curriculum Vitae. Download it below to learn more about my qualifications and experience in IT and AI.</p>
+        <a href="CV/With Kinobi/PDF/Marioe Tri Wardhana.pdf" class="btn-cv" download="Marioe_Tri_Wardhana_CV.pdf">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+      <div class="cv-image">
+        <img src="CV/With Kinobi/JPG/Marioe Tri Wardhana_page-0001.jpg" alt="CV Preview" />
+        <img src="CV/With Kinobi/JPG/Marioe Tri Wardhana_page-0002.jpg" alt="CV Preview" />
+      </div>
+    </div>
+  </div>
+  <div id="experience-content" class="cv-section-content">
+    <div class="experience-wrapper">
+      <div class="experience-item">
+        <div class="experience-header">
+          <img src="Assets/Mattel_logo.png" alt="Mattel Logo" class="company-logo" />
+          <div class="experience-title">
+            <h4>Group Attendance Management</h4>
+            <p class="company">Mattel</p>
+            <p class="duration">Mar 2025 - May 2025</p>
+          </div>
+        </div>
+        <ul>
+          <li>Developed a desktop-based attendance application using Python, OpenCV, and FaceNet with key features such as admin authentication, shift management, automatic attendance based on face recognition, salary calculation, and Excel report export</li>
+          <li>Improve HRD operational efficiency with >98% face recognition accuracy, reduce recording errors up to 95%, and speed up attendance recapitulation from 2 hours to only 15 minutes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="certificates" class="section" data-aos="fade-up">
+    <h2>Certificates</h2>
+    <div class="certificate-wrapper">
+      <button class="arrow arrow-left" onclick="prevCertificate()"><i class="fas fa-chevron-left"></i></button>
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <img src="Certificate/Procean.png" alt="Volunteering in PROCEAN">
+          <div class="certificate-info">
+            <h3>Volunteering in PROCEAN (Project Ocean)</h3>
+            <p>As a volunteer in the PROCEAN project, I contribute to efforts to reduce waste in the coastal environment. My main activities include beach cleaning and educating the community on the importance of keeping the coastal environment clean for a better ecosystem. I also work closely with the team in waste management and support environmental awareness campaigns to the community.</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate/Kids & Care.jpg" alt="Kids and Care Volunteer">
+          <div class="certificate-info">
+            <h3>Kids and Care Volunteer</h3>
+            <p>In Kids and Care, I play an active role in supporting children from various backgrounds to get better education and care. As a volunteer, I assist in teaching and learning activities, as well as providing mentoring to children in need, with a focus on their educational and social development. This activity aims to improve children's quality of life through better care and education.</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate/Participant Seminar.jpg" alt="Seminar: The Art and Algorithms of Design">
+          <div class="certificate-info">
+            <h3>Seminar: The Art and Algorithms of Design</h3>
+            <p>As a participant in The Art and Algorithms of Design seminar, I joined the event to explore the relationship between the artistic aspects of design and the underlying algorithms. This seminar provided new insights into the application of technology in design and how algorithms can be used to create aesthetic works. Through this seminar, I was able to expand my knowledge about design and techniques that combine art with computer science.</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate/Young On Top Leadership Program.jpg" alt="Young On Top Leadership Program">
+          <div class="certificate-info">
+            <h3>Young On Top Leadership Program</h3>
+            <p>Participated in the Young On Top Leadership Program online via video, which provides deep insights into leadership and personal development. In this program, I learned important concepts related to leadership skills, team management, and soft skills development needed to succeed in the professional world. The program also gave me a new perspective on how to be an effective leader, build a positive mentality, and take advantage of opportunities to grow and develop in my career.</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate/COOMPSPHERE.jpg" alt="Seminar: Coompsphere">
+          <div class="certificate-info">
+            <h3>Seminar: Coompsphere</h3>
+            <p>An event organized by PUMA Informatics that featured speakers from the technology industry and academia. This seminar discussed the latest topics in the field of information technology, such as software development, UI/UX design, artificial intelligence, and digital innovation. Through this seminar, I gained new insights, inspiration, and a deeper understanding of trends and opportunities in the IT world.</p>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <img src="Certificate/Commite.jpg" alt="Student Awarding Night Logistic Committee">
+          <div class="certificate-info">
+            <h3>Student Awarding Night Logistic Committee</h3>
+            <p>As a member of the logistics committee for the Student Awarding Night event, I was responsible for the preparation and management of the event logistics, including venue arrangements, equipment, as well as ensuring the efficient running of the event. I worked closely with the team to prepare all the necessities, including decorations, documentation, and coordination with various parties to ensure the awarding event runs smoothly and successfully.</p>
+          </div>
+        </div>
+      </div>
+      <button class="arrow arrow-right" onclick="nextCertificate()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="certificate-indicators"></div>
+  </section>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">×</span>
+      <h3 id="modal-title"></h3>
+      <div id="modal-gallery" class="gallery">
+      </div>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
   <section id="kontak" class="section" data-aos="fade-up">
-    <h2>Kontak</h2>
-    <p>Email: <a target="_blank" rel="noopener noreferrer">mariotriwardhana07@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/marioe-tri-wardhana-72208028b/" target="_blank" rel="noopener noreferrer">linkedin.com/in/MarioeTri</a></p>
-    <p>GitHub: <a href="https://github.com/MarioeTri" target="_blank" rel="noopener noreferrer">https://github.com/MarioeTri</a></p>
+  <h2>Contact Me</h2>
+  <p class="contact-intro">Let's connect! Reach out via email, social media, or send me a message directly using the form below.</p>
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <div class="contact-card" data-aos="zoom-in">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p><a href="#" class="captcha-link" data-link="https://mail.google.com/mail/?view=cm&fs=1&to=mariotriwardhana07@gmail.com&su=Opportunity%20to%20Join%20Our%20Team&body=Dear%20Marioe%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20recently%20came%20across%20your%20portfolio%20and%20was%20truly%20impressed%20by%20your%20background%20and%20accomplishments%20in%20the%20fields%20of%20Information%20Technology%20and%20Artificial%20Intelligence.%20Your%20skills%20and%20the%20projects%20you%E2%80%99ve%20been%20involved%20in%20demonstrate%20a%20strong%20commitment%20to%20both%20technical%20excellence%20and%20continuous%20growth.%0A%0AWe%20are%20currently%20exploring%20opportunities%20to%20collaborate%20with%20talented%20individuals%20like%20yourself%2C%20either%20through%20an%20internship%20or%20a%20professional%20role.%20I%20believe%20your%20experience%20and%20passion%20align%20well%20with%20the%20kind%20of%20innovative%20work%20we%E2%80%99re%20doing.%0A%0AIf%20you%E2%80%99re%20open%20to%20it%2C%20I%E2%80%99d%20love%20the%20opportunity%20to%20discuss%20this%20further%20and%20explore%20how%20we%20might%20work%20together.%20Please%20let%20me%20know%20a%20suitable%20time%20for%20a%20brief%20conversation%20or%20feel%20free%20to%20share%20your%20availability.%0A%0ALooking%20forward%20to%20hearing%20from%20you%20soon.%0A%0AWarm%20regards%2C%0ARecruitment%20Team">mariotriwardhana07@gmail.com</a></p>
+      </div>
+      <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/marioe-tri-wardhana-72208028b/" target="_blank" rel="noopener noreferrer">linkedin.com/in/MarioeTri</a></p>
+      </div>
+      <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/MarioeTri" target="_blank" rel="noopener noreferrer">github.com/MarioeTri</a></p>
+      </div>
+      <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fab fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p><a href="#" class="captcha-link" data-link="https://wa.me/+6285156684881?text=Dear%20Marioe%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%0A%0AI%20recently%20came%20across%20your%20portfolio%20and%20was%20truly%20impressed%20by%20your%20background%20and%20accomplishments%20in%20the%20fields%20of%20Information%20Technology%20and%20Artificial%20Intelligence.%20Your%20skill%20set%2C%20combined%20with%20your%20involvement%20in%20various%20projects%2C%20reflects%20a%20strong%20dedication%20to%20innovation%2C%20problem-solving%20and%20continuous%20development%20%E2%80%94%20qualities%20that%20we%20deeply%20value.%0A%0AAt%20the%20moment%2C%20our%20team%20is%20actively%20seeking%20to%20connect%20with%20talented%20individuals%20like%20yourself%20for%20potential%20collaboration%2C%20either%20through%20an%20internship%20or%20a%20professional%20role.%20We%20believe%20your%20expertise%20and%20enthusiasm%20could%20bring%20great%20value%20to%20the%20kind%20of%20forward-thinking%20work%20we're%20committed%20to.%0A%0AShould%20you%20be%20open%20to%20a%20conversation%2C%20we%20would%20be%20delighted%20to%20further%20discuss%20how%20we%20might%20align%20our%20goals%20and%20work%20together.%20Please%20let%20us%20know%20a%20convenient%20time%20for%20a%20brief%20discussion%2C%20or%20feel%20free%20to%20share%20your%20availability.%0A%0ALooking%20forward%20to%20your%20response%20and%20hoping%20for%20the%20opportunity%20to%20connect%20further.%0A%0AWarm%20regards%2C%0ARecruitment%20Team">Chat on WhatsApp</a></p>
+      </div>
+    </div>
+    <form id="contactForm" class="contact-form" action="" method="POST">
+    <input type="hidden" name="access_key" value="" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+62-852-2354-1723" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+
+</section>
+
+  <div id="captcha-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeCaptchaModal()">×</span>
+      <h3>Verify You're Not a Robot</h3>
+      <div class="captcha-container">
+        <p>Enter the code below:</p>
+        <div id="captcha-code" class="captcha-code"></div>
+        <button id="refresh-captcha" class="btn"><i class="fas fa-sync-alt"></i> Refresh Code</button>
+        <input type="text" id="captcha-input" placeholder="Enter code here" maxlength="6" />
+        <p id="captcha-error" class="error" style="display: none;">Incorrect code. Please try again.</p>
+        <button id="verify-captcha" class="btn">Verify</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="chatbot" class="chatbot-section">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+      <img src="assets/Chatbot removebg.png" alt="Chatbot Icon" class="chatbot-icon">
+    </div>
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+        <h3>Portfolio Assistant</h3>
+        <span class="chatbot-close" onclick="toggleChatbot()">×</span>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <div class="chatbot-input">
+        <input type="text" id="chatbot-input" placeholder="Ask about my portfolio..." />
+        <div class="chatbot-buttons">
+          <button id="chatbot-reset" title="Clear Chat"><i class="fas fa-undo"></i></button>
+          <button id="chatbot-voice" title="Voice Input"><i class="fas fa-microphone"></i></button>
+          <button id="chatbot-send" title="Send Message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -262,3 +401,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
